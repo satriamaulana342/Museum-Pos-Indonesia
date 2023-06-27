@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- preload -->
-    <link rel="preload" as="image" href="img/logo.webp" />
+    <link rel="preload" as="image" href="{{ url('asset/logo.webp') }}" />
 
     <meta charset="utf-8" />
     <title>Selamat datang di Museum Pos Indonesia</title>
@@ -29,7 +29,7 @@
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
 <!-- Template Stylesheet -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
-    
+
   </head>
 
   <body>
@@ -38,7 +38,7 @@
       <nav class="navbar navbar-expand-lg bg-light navbar-dark navbar-light py-3 py-lg-0">
         <a href="index.html" class="navbar-brand">
           <h1 class="m-2 display-6" style="font-weight: 300">
-            <img src="img/logo.webp" alt="logo pos indonesia" />
+            <img src="{{ url('asset/logo.webp') }}" alt="logo pos indonesia" />
           </h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -63,7 +63,7 @@
       <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="w-100 object-fit" height="510" src="img/gate.webp" alt="Image" />
+            <img class="w-100 object-fit" height="510" src="{{ url('asset/gate.webp') }}" alt="Image" />
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div class="p-3" style="max-width: 900px">
                 <h1 class="display-2 text-uppercase text-white mb-md-4">Museum Pos Indonesia</h1>
@@ -72,7 +72,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="w-100 object-fit" height="510" src="img/gedung1.webp" alt="Image" />
+            <img class="w-100 object-fit" height="510" src="{{ url('asset/gedung1.webp') }}" alt="Image" />
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div class="p-3" style="max-width: 900px">
                 <h1 class="display-2 text-uppercase text-white mb-md-4">Museum pos indonesia</h1>
@@ -115,7 +115,7 @@
           </p>
         </div>
         <div class="col-lg-5 pb-5 mb-5" style="min-height: 400px">
-          <img class="w-100 mt-5 object-fit" height="650" src="img/museum-gate.webp" alt="Foto Museum pintu depan" />
+          <img class="w-100 mt-5 object-fit" height="650" src="{{ url('asset/museum-gate.webp') }}" alt="Foto Museum pintu depan" />
         </div>
       </div>
     </div>
@@ -194,7 +194,7 @@
     <div class="container-fluid position-relative bg-dark bg-light-radial text-white-50 py-3 pt-5 px-5">
       <div class="row g-5">
         <div class="col-lg-6 pe-lg-5">
-          <a href="index.html" class="navbar-brand"><img src="img/footer-logo.webp" class="mb-4 footer-logo mx-auto" alt="logo footer" /></a>
+          <a href="index.html" class="navbar-brand"><img src="{{ url('asset/footer-logo.webp') }}" class="mb-4 footer-logo mx-auto" alt="logo footer" /></a>
           <p class="p-big">
             Sejalan dengan perkembangan perusahaan pos dimana terhitung tanggal 20 juni 1995 nama dan status perusahaan berubah dari Perusahaan Umum Pos dan Giro menjadi PT. Pos Indonesia (persero). maka terjadi pula perubahan nama museum ini dari
             Museum Pos dan Giro menjadi MUSEUM POS INDONESIA sampai sekarang.
