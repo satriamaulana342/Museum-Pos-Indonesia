@@ -36,7 +36,7 @@
     <!-- Navbar Start -->
     <div class="container-fluid fixed-top bg-light shadow-sm px-5 pe-lg-0">
       <nav class="navbar navbar-expand-lg bg-light navbar-dark navbar-light py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand">
+        <a href="/index" class="navbar-brand">
           <h1 class="m-2 display-6" style="font-weight: 300">
             <img src="{{ url('asset/logo.webp') }}" alt="logo pos indonesia" />
           </h1>
@@ -46,12 +46,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto py-0">
-            <a href="index.html" class="nav-item nav-link active">Beranda</a>
-            <a href="profil.html" class="nav-item nav-link">Profil</a>
-            <a href="sejarah.html" class="nav-item nav-link">Sejarah</a>
-            <a href="ruangan.html" class="nav-item nav-link">Ruangan</a>
-            <a href="contact.html" class="nav-item nav-link">Kontak</a>
-            <a href="reservasi.html" class="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block">Reservasi<i class="bi bi-arrow-right"></i></a>
+            <a href="/" class="nav-item nav-link active">Beranda</a>
+            <a href="/profil" class="nav-item nav-link">Profil</a>
+            <a href="/sejarah" class="nav-item nav-link">Sejarah</a>
+            <a href="/ruangan" class="nav-item nav-link">Ruangan</a>
+            <a href="/contact" class="nav-item nav-link">Kontak</a>
+            <a href="/reservasi" class="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block">Reservasi<i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
       </nav>
@@ -132,7 +132,7 @@
             <div class="p-4 pb-4">
               <h4 class="text-uppercase mb-3">Pameran-1</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda.</p>
-              <a class="btn text-primary" href="artikel.html">Baca Lebih Lanjut<i class="bi bi-arrow-right"></i></a>
+              <a class="btn text-primary" href="/artikel">Baca Lebih Lanjut<i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -144,7 +144,7 @@
             <div class="p-4 pb-4">
               <h4 class="text-uppercase mb-3">Kunjungan-1</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum.</p>
-              <a class="btn text-primary" href="artikel.html">Baca Lebih Lanjut<i class="bi bi-arrow-right"></i></a>
+              <a class="btn text-primary" href="/artikel">Baca Lebih Lanjut<i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@
             <div class="p-4 pb-4">
               <h4 class="text-uppercase mb-3">Kunjungan-2</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque.</p>
-              <a class="btn text-primary" href="artikel.html">Baca Lebih Lanjut<i class="bi bi-arrow-right"></i></a>
+              <a class="btn text-primary" href="/artikel">Baca Lebih Lanjut<i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@
             <div class="p-4 pb-4">
               <h4 class="text-uppercase mb-3">Kunjungan-3</h4>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut.</p>
-              <a class="btn text-primary" href="artikel.html">Baca Lebih Lanjut <i class="bi bi-arrow-right"></i></a>
+              <a class="btn text-primary" href="/artikel">Baca Lebih Lanjut <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -184,7 +184,7 @@
             <h1 class="display-5 text-uppercase mb-4">Reservasi <span class="text-primary">Kunjungan</span></h1>
           </div>
           <p class="mb-5">Sekarang anda dapat reservasi kunjungan / rombongan langsung melalui web, cukup pilih jenis rombongan yang ada</p>
-          <a class="btn btn-primary py-3 px-5" href="reservasi.html">Reservasi</a>
+          <a class="btn btn-primary py-3 px-5" href="/reservasi">Reservasi</a>
         </div>
       </div>
     </div>
@@ -194,7 +194,7 @@
     <div class="container-fluid position-relative bg-dark bg-light-radial text-white-50 py-3 pt-5 px-5">
       <div class="row g-5">
         <div class="col-lg-6 pe-lg-5">
-          <a href="index.html" class="navbar-brand"><img src="{{ url('asset/footer-logo.webp') }}" class="mb-4 footer-logo mx-auto" alt="logo footer" /></a>
+          <a href="/" class="navbar-brand"><img src="{{ url('asset/footer-logo.webp') }}" class="mb-4 footer-logo mx-auto" alt="logo footer" /></a>
           <p class="p-big">
             Sejalan dengan perkembangan perusahaan pos dimana terhitung tanggal 20 juni 1995 nama dan status perusahaan berubah dari Perusahaan Umum Pos dan Giro menjadi PT. Pos Indonesia (persero). maka terjadi pula perubahan nama museum ini dari
             Museum Pos dan Giro menjadi MUSEUM POS INDONESIA sampai sekarang.
@@ -208,10 +208,10 @@
             <div class="col-sm-6">
               <h3 class="text-white text-uppercase mb-4">Quick Links</h3>
               <div class="d-flex flex-column justify-content-start p-big">
-                <a class="text-white-50 mb-2" href="profil.html"><i class="fa fa-angle-right me-2"></i>Profil</a>
-                <a class="text-white-50 mb-2" href="sejarah.html"><i class="fa fa-angle-right me-2"></i>Sejarah</a>
-                <a class="text-white-50 mb-2" href="ruangan.html"><i class="fa fa-angle-right me-2"></i>Ruangan</a>
-                <a class="text-white-50" href="contact.html"><i class="fa fa-angle-right me-2"></i>Kontak</a>
+                <a class="text-white-50 mb-2" href="/profil"><i class="fa fa-angle-right me-2"></i>Profil</a>
+                <a class="text-white-50 mb-2" href="/sejarah"><i class="fa fa-angle-right me-2"></i>Sejarah</a>
+                <a class="text-white-50 mb-2" href="/ruangan"><i class="fa fa-angle-right me-2"></i>Ruangan</a>
+                <a class="text-white-50" href="/contact"><i class="fa fa-angle-right me-2"></i>Kontak</a>
               </div>
               <div class="d-flex justify-content-start mt-4">
                 <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>

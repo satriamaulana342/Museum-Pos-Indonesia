@@ -49,7 +49,7 @@
         <div class="container-fluid fixed-top bg-light shadow-sm px-5 pe-lg-0">
         <nav
             class="navbar navbar-expand-lg bg-light navbar-dark navbar-light py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand">
+            <a href="/" class="navbar-brand">
             <h1 class="m-2 display-6" style="font-weight: 300">
                 <img src="img/logo.png" alt="" />
             </h1>
@@ -63,12 +63,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link">Beranda</a>
-                <a href="profil.html" class="nav-item nav-link">Profil</a>
-                <a href="sejarah.html" class="nav-item nav-link">Sejarah</a>
-                <a href="ruangan.html" class="nav-item nav-link">Ruangan</a>
-                <a href="contact.html" class="nav-item nav-link">Kontak</a>
-                <a href="Reservasi.html"class="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block">Reservasi <i class="bi bi-arrow-right"></i></a>
+                <a href="/" class="nav-item nav-link">Beranda</a>
+                <a href="/profil" class="nav-item nav-link">Profil</a>
+                <a href="/sejarah" class="nav-item nav-link">Sejarah</a>
+                <a href="/ruangan" class="nav-item nav-link">Ruangan</a>
+                <a href="/contact" class="nav-item nav-link">Kontak</a>
+                <a href="/reservasi"class="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block">Reservasi <i class="bi bi-arrow-right"></i></a>
             </div>
             </div>
         </nav>
@@ -91,7 +91,7 @@
         class="footer container-fluid position-relative bg-dark bg-light-radial text-white-50 py-6 px-5">
         <div class="row g-5">
             <div class="col-lg-6 pe-lg-5">
-            <a href="index.html" class="navbar-brand">
+            <a href="/" class="navbar-brand">
                 <h1 class="m-0 display-4 text-uppercase text-white">
                 <i class="bi bi-building text-primary me-2"></i>Meseum Pos indonesia
                 </h1>
@@ -110,10 +110,10 @@
                 <div class="col-sm-6">
                 <h4 class="text-white text-uppercase mb-4">Quick Links</h4>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="profil.html"><i class="fa fa-angle-right me-2"></i>Profil</a>
-                    <a class="text-white-50 mb-2" href="sejarah.html"><i class="fa fa-angle-right me-2"></i>Sejarah</a>
-                    <a class="text-white-50 mb-2" href="ruangan.html"><i class="fa fa-angle-right me-2"></i>Ruangan</a>
-                    <a class="text-white-50" href="contact.html"><i class="fa fa-angle-right me-2"></i>Kontak</a>
+                    <a class="text-white-50 mb-2" href="/profil"><i class="fa fa-angle-right me-2"></i>Profil</a>
+                    <a class="text-white-50 mb-2" href="/sejarah"><i class="fa fa-angle-right me-2"></i>Sejarah</a>
+                    <a class="text-white-50 mb-2" href="/ruangan"><i class="fa fa-angle-right me-2"></i>Ruangan</a>
+                    <a class="text-white-50" href="/contact"><i class="fa fa-angle-right me-2"></i>Kontak</a>
                 </div>
                 <div class="d-flex justify-content-start mt-4">
                 <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2"href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
