@@ -195,7 +195,7 @@
       <div class="row g-5">
         <div class="col-lg-6 pe-lg-5">
           <a href="/" class="navbar-brand"><img src="{{ url('asset/footer-logo.webp') }}" class="mb-4 footer-logo mx-auto" alt="logo footer" /></a>
-          <p class="p-big">
+          <p class="text-justify p-big">
             Sejalan dengan perkembangan perusahaan pos dimana terhitung tanggal 20 juni 1995 nama dan status perusahaan berubah dari Perusahaan Umum Pos dan Giro menjadi PT. Pos Indonesia (persero). maka terjadi pula perubahan nama museum ini dari
             Museum Pos dan Giro menjadi MUSEUM POS INDONESIA sampai sekarang.
           </p>

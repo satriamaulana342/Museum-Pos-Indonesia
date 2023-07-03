@@ -71,7 +71,7 @@
       <div class="row g-5">
         <div class="col-lg-5 pb-5" style="min-height: 400px">
           <div class="position-relative bg-dark-radial h-50 ms-5">
-            <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="img/gedung2.webp" style="object-fit: cover" />
+            <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="{{ url('asset/gedung2.webp') }}" style="object-fit: cover" />
           </div>
         </div>
         <div class="col-lg-7">
@@ -105,7 +105,7 @@
       <div class="row g-5">
         <div class="col-lg-6 pe-lg-5">
           <div class="d-flex justify-content-center">
-            <a href="/" class="navbar-brand"><img src="img/footer-logo.webp" class="mb-4" style="width: 400px" alt="" /></a>
+            <a href="/" class="navbar-brand"><img src="{{ url('asset/footer-logo.webp') }}" class="mb-4 footer-logo mx-auto" style="" alt="logo footer" /></a>
           </div>
           <p class="text-justify p-big">
             Sejalan dengan perkembangan perusahaan pos dimana terhitung tanggal 20 juni 1995 nama dan status perusahaan berubah dari Perusahaan Umum Pos dan Giro menjadi PT. Pos Indonesia (persero). maka terjadi pula perubahan nama museum ini dari
