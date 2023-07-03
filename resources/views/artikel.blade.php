@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- preload -->
-    <link rel="preload" as="image" href="img/logo.webp" />
+    <link rel="preload" as="image" href="{{ url('asset/logo.webp') }}" />
 
     <meta charset="utf-8" />
     <title>Museum Pos Indonesia</title>
@@ -39,9 +39,9 @@
     <!-- Navbar Start -->
     <div class="container-fluid fixed-top bg-light shadow-sm px-5 pe-lg-0">
       <nav class="navbar navbar-expand-lg bg-light navbar-dark navbar-light py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand">
+        <a href="/" class="navbar-brand">
           <h1 class="m-2 display-6" style="font-weight: 300">
-            <img src="img/logo.webp" alt="" />
+            <img src="{{ url('asset/logo.webp') }}" alt="" />
           </h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -49,12 +49,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto py-0">
-            <a href="index.html" class="nav-item nav-link">Beranda</a>
-            <a href="profil.html" class="nav-item nav-link">Profil</a>
-            <a href="sejarah.html" class="nav-item nav-link">Sejarah</a>
-            <a href="ruangan.html" class="nav-item nav-link">Ruangan</a>
-            <a href="contact.html" class="nav-item nav-link">Kontak</a>
-            <a href="reservasi.html" class="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block">Reservasi <i class="bi bi-arrow-right"></i></a>
+            <a href="/" class="nav-item nav-link">Beranda</a>
+            <a href="/profil" class="nav-item nav-link">Profil</a>
+            <a href="/sejarah" class="nav-item nav-link">Sejarah</a>
+            <a href="/ruangan" class="nav-item nav-link">Ruangan</a>
+            <a href="/contact" class="nav-item nav-link">Kontak</a>
+            <a href="/reservasi" class="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block">Reservasi <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
       </nav>
@@ -65,7 +65,7 @@
     <div class="container-fluid page-header">
       <h1 class="display-3 text-uppercase text-white mb-3">Artikel</h1>
       <div class="d-inline-flex text-white">
-        <h6 class="text-uppercase m-0"><a href="index.html">Beranda</a></h6>
+        <h6 class="text-uppercase m-0"><a href="/">Beranda</a></h6>
         <h6 class="text-white m-0 px-3">/</h6>
         <h6 class="text-uppercase text-white m-0">Artikel</h6>
       </div>
@@ -134,7 +134,7 @@
       <div class="row g-5">
         <div class="col-lg-6 pe-lg-5">
           <div class="d-flex justify-content-center">
-            <a href="index.html" class="navbar-brand"><img src="img/footer-logo.webp" class="mb-4" style="width: 400px" alt="" /></a>
+            <a href="/" class="navbar-brand"><img src="img/footer-logo.webp" class="mb-4" style="width: 400px" alt="" /></a>
           </div>
           <p class="text-justify p-big">
             Sejalan dengan perkembangan perusahaan pos dimana terhitung tanggal 20 juni 1995 nama dan status perusahaan berubah dari Perusahaan Umum Pos dan Giro menjadi PT. Pos Indonesia (persero). maka terjadi pula perubahan nama museum ini dari
@@ -149,10 +149,10 @@
             <div class="col-sm-6">
               <h3 class="text-white text-uppercase mb-4">Quick Links</h3>
               <div class="d-flex flex-column justify-content-start p-big">
-                <a class="text-white-50 mb-2" href="profil.html"><i class="fa fa-angle-right me-2"></i>Profil</a>
-                <a class="text-white-50 mb-2" href="sejarah.html"><i class="fa fa-angle-right me-2"></i>Sejarah</a>
-                <a class="text-white-50 mb-2" href="ruangan.html"><i class="fa fa-angle-right me-2"></i>Ruangan</a>
-                <a class="text-white-50" href="contact.html"><i class="fa fa-angle-right me-2"></i>Kontak</a>
+                <a class="text-white-50 mb-2" href="/profil"><i class="fa fa-angle-right me-2"></i>Profil</a>
+                <a class="text-white-50 mb-2" href="/sejarah"><i class="fa fa-angle-right me-2"></i>Sejarah</a>
+                <a class="text-white-50 mb-2" href="/ruangan"><i class="fa fa-angle-right me-2"></i>Ruangan</a>
+                <a class="text-white-50" href="/contact"><i class="fa fa-angle-right me-2"></i>Kontak</a>
               </div>
               <div class="d-flex justify-content-start mt-4">
                 <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>

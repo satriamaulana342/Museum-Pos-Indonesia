@@ -17,16 +17,28 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/artikel', function () {
-    return view('artikel');
+Route::get('/profil', function () {
+    return view('profil');
+});
+
+Route::get('/sejarah', function () {
+    return view('sejarah');
+});
+
+Route::get('/ruangan', function () {
+    return view('ruangan');
 });
 
 Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/profil', function () {
-    return view('profil');
+Route::get('/reservasi', function () {
+    return view('reservasi');
+});
+
+Route::get('/artikel', function () {
+    return view('artikel');
 });
 
 Route::get('/dashboard', function () {
