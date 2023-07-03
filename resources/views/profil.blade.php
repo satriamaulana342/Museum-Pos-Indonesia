@@ -71,7 +71,7 @@
       <div class="row g-5">
         <div class="col-lg-5 pb-5" style="min-height: 400px">
           <div class="position-relative bg-dark-radial h-50 ms-5">
-            <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="{{ url('asset/gedung2.webp') }}" style="object-fit: cover" />
+            <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="{{ url('asset/gedung2.webp') }}" style="object-fit: cover" >
           </div>
         </div>
         <div class="col-lg-7">
@@ -126,10 +126,10 @@
                 <a class="text-white-50" href="/contact"><i class="fa fa-angle-right me-2"></i>Kontak</a>
               </div>
               <div class="d-flex justify-content-start mt-4">
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.linkedin.com/login/in"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://twitter.com/posindonesia"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.facebook.com/posindonesia/"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.linkedin.com/company/pt-pos-indonesia-persero/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="https://www.instagram.com/posindonesia.ig//"><i class="fab fa-instagram"></i></a>
               </div>
             </div>
           </div>

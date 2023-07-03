@@ -155,10 +155,10 @@
                 <a class="text-white-50" href="/contact"><i class="fa fa-angle-right me-2"></i>Kontak</a>
               </div>
               <div class="d-flex justify-content-start mt-4">
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.linkedin.com/login/in"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://twitter.com/posindonesia"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.facebook.com/posindonesia/"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.linkedin.com/company/pt-pos-indonesia-persero/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="https://www.instagram.com/posindonesia.ig//"><i class="fab fa-instagram"></i></a>
               </div>
             </div>
           </div>
