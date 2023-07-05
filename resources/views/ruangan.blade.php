@@ -129,7 +129,7 @@
           </p>
           <p class="p-big"><i class="fa fa-map-marker-alt me-2"></i>Jalan Cilaki No.73 Bandung 40115.</p>
           <p class="p-big"><i class="fa fa-phone-alt me-2"></i>0892383488</p>
-          <p class="p-big"><i class="fa fa-envelope me-2"></i>Museum pos indonesia.co.id</p>
+          <p class="p-big"><i class="fa fa-envelope me-2"></i>museumposindonesia@gmail.com</p>
         </div>
         <div class="col-lg-6 ps-lg-5 my-auto">
           <div class="row g-5">

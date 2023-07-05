@@ -104,7 +104,7 @@
       <div class="row g-5">
         <div class="col-lg-6 pe-lg-5">
           <div class="d-flex justify-content-center">
-            <a href="/" class="navbar-brand"><img src="{{ url('asset/footer-logo.webp') }}" class="mb-4 footer-logo mx-auto" style="width: 400px" alt="" /></a>
+            <a href="/" class="navbar-brand"><img src="" class="mb-4 footer-logo mx-auto" style="width: 400px" alt="" /></a>
           </div>
           <p class="text-justify p-big">
             Sejalan dengan perkembangan perusahaan pos dimana terhitung tanggal 20 juni 1995 nama dan status perusahaan berubah dari Perusahaan Umum Pos dan Giro menjadi PT. Pos Indonesia (persero). maka terjadi pula perubahan nama museum ini dari
@@ -112,7 +112,7 @@
           </p>
           <p class="p-big"><i class="fa fa-map-marker-alt me-2"></i>Jalan Cilaki No.73 Bandung 40115.</p>
           <p class="p-big"><i class="fa fa-phone-alt me-2"></i>0892383488</p>
-          <p class="p-big"><i class="fa fa-envelope me-2"></i>Museum pos indonesia.co.id</p>
+          <p class="p-big"><i class="fa fa-envelope me-2"></i>museumposindonesia@gmail.com</p>
         </div>
         <div class="col-lg-6 ps-lg-5 my-auto">
           <div class="row g-5">
