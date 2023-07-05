@@ -40,7 +40,7 @@
       <nav class="navbar navbar-expand-lg bg-light navbar-dark navbar-light py-3 py-lg-0">
         <a href="/" class="navbar-brand">
           <h1 class="m-2 display-6" style="font-weight: 300">
-            <img src="img/logo.png" alt="" />
+            <img src="{{ url('asset/logo.webp') }}" alt="" />
           </h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
