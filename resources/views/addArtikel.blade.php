@@ -366,14 +366,36 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
+                    
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                        <h1 class="h3 mb-0 text-gray-800">Add Artikel</h1>
                     </div>
 
+                    <div class="mb-4">
+                        <label for="images" class="block text-gray-700 font-bold mb-2">Image:</label>
+                        <input type="file" name="images" id="images" class="border rounded-lg py-2 px-3 w-full @error('images') border-red-500 @enderror" value="{{ old('images') }}">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="" class="block text-gray-700 font-bold mb-2"> Judul Artikel:</label>
+                        <input type="" name="" id="" class="border rounded-lg py-2 px-3 w-full @error('') border-red-500 @enderror" value="{{ old('name') }}" placeholder="Judul Artikel ">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="" class="block text-gray-700 font-bold mb-2"> Kategori Artikel:</label>
+                        <input type="" name="" id="" class="border rounded-lg py-2 px-3 w-full @error('') border-red-500 @enderror" value="{{ old('kategori') }}" placeholder="Kategori Artikel ">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="" class="block text-gray-700 font-bold mb-2">Isi Artikel:</label>
+                        <textarea name="" id="" class="border rounded-lg py-2 px-3 w-full @error('') border-red-500 @enderror" rows="5" cols="50" placeholder="Isi Artikel">{{ old('isi') }}</textarea>
+                    </div>
+                    
+                    <a class="btn btn-primary py-md-3 px-md-5 mt-2">Add Artikel</a>
+
+                                        </div>
                     <!-- Content Row -->
-                    <div class="row">
+                    {{-- <div class="row">
 
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
@@ -757,3 +779,5 @@
 </body>
 
 </html>
+    
+         --}}
