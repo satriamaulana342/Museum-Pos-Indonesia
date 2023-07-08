@@ -76,19 +76,21 @@
     <div class="container-fluid bg-light py-6 px-5">
       <div class="row g-5">
         <!-- 1 -->
+        @foreach ($artikel as $item)       
         <div class="col-lg-4 col-md-6">
           <div class="service-item h-card bg-white d-flex flex-column align-items-center text-center">
-            <img class="w-100 object-fit" src="img/artikel/1.webp" height="200" alt="" />
+            <img class="w-100 object-fit" src="{{asset('storage/article/'. $item->thumbnail)}}" height="200" alt="" />
 
             <div class="p-4 pb-4">
-              <h4 class="text-uppercase mb-3">Artikel-1</h4>
+              <h4 class="text-uppercase mb-3">{{$item->heading}}</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, eveniet.</p>
-              <a class="btn text-primary" href="article/dummy.html"> Baca Lebih lanjut <i class="bi bi-arrow-right"></i></a>
+              <a class="btn text-primary" href="artikel/{{$item->heading}}"> Baca Lebih lanjut <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
+        @endforeach
 
-        <!-- 2 -->
+        {{-- <!-- 2 -->
         <div class="col-lg-4 col-md-6">
           <div class="service-item h-card bg-white rounded d-flex flex-column align-items-center text-center">
             <img class="w-100 object-fit" src="img/artikel/2.webp" height="200" alt="" />
@@ -124,9 +126,9 @@
               <a class="btn text-primary" href="article/dummy.html">Baca Lebih Lanjut<i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-        </div>
+        </div>--}}
       </div>
-    </div>
+    </div> 
     <!-- dashboard End -->
 
     <!-- Footer Start -->

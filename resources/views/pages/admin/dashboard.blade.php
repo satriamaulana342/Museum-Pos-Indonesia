@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard Admin - Pos</title>
+    <title>{{$title}}</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -58,7 +58,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/addArtikel" data-toggle="collapse" data-target="#collapseTwo"
+                <a class="nav-link collapsed" href="/dashboard/article/add" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Add Artikel</span>
@@ -146,7 +146,7 @@
             <div class="sidebar-card d-none d-lg-flex">
                 <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
                 <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
+                <a class="btn btn-danger btn-sm" href="/dashboard/logout">Logout</a>
             </div>
 
         </ul>
@@ -366,36 +366,14 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Add Artikel</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
 
-                    <div class="mb-4">
-                        <label for="images" class="block text-gray-700 font-bold mb-2">Image:</label>
-                        <input type="file" name="images" id="images" class="border rounded-lg py-2 px-3 w-full @error('images') border-red-500 @enderror" value="{{ old('images') }}">
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="" class="block text-gray-700 font-bold mb-2"> Judul Artikel:</label>
-                        <input type="" name="" id="" class="border rounded-lg py-2 px-3 w-full @error('') border-red-500 @enderror" value="{{ old('name') }}" placeholder="Judul Artikel ">
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="" class="block text-gray-700 font-bold mb-2"> Kategori Artikel:</label>
-                        <input type="" name="" id="" class="border rounded-lg py-2 px-3 w-full @error('') border-red-500 @enderror" value="{{ old('kategori') }}" placeholder="Kategori Artikel ">
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="" class="block text-gray-700 font-bold mb-2">Isi Artikel:</label>
-                        <textarea name="" id="" class="border rounded-lg py-2 px-3 w-full @error('') border-red-500 @enderror" rows="5" cols="50" placeholder="Isi Artikel">{{ old('isi') }}</textarea>
-                    </div>
-                    
-                    <a class="btn btn-primary py-md-3 px-md-5 mt-2">Add Artikel</a>
-
-                                        </div>
                     <!-- Content Row -->
-                    {{-- <div class="row">
+                    <div class="row">
 
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
@@ -779,5 +757,3 @@
 </body>
 
 </html>
-    
-         --}}
