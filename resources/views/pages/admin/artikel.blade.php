@@ -32,7 +32,7 @@
               @foreach ($artikel as $item)
               <tr>
                 <th scope="row"></th>
-                <td><img src="{{asset('storage/article/'. $item->thumbnail)}}" alt="" width="150"></td>
+                <td><img src="{{asset('/storage/article/'. $item->thumbnail)}}" alt="" width="150"></td>
                 <td>{{$item->heading}}</td>
                 <td>
                   <a href="/dashboard/artikel/{{$item->id}}" class="btn btn-primary">Edit</a>

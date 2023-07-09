@@ -126,54 +126,19 @@
       <div class="row g-5">
         <h1 class="display-5 text-uppercase mb-4 text-center">Highlight Kunjungan Museum</h1>
         <!-- 1 -->
+        @foreach($data as $item)
         <div class="col-lg-3 col-md-6">
           <div class="service-item h-card bg-white d-flex flex-column align-items-center text-center">
-            <img class="w-100 object-fit" src="img/artikel/1.webp" alt="foto kerajaan" loading="lazy" height="150" alt="" />
+            <img class="w-100 object-fit" src="{{asset('/storage/article/'. $item->thumbnail)}}" alt="foto kerajaan" loading="lazy" height="150" alt="" />
             <div class="p-4 pb-4">
-              <h4 class="text-uppercase mb-3">Pameran-1</h4>
+              <h4 class="text-uppercase mb-3">{{$item->heading}}</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda.</p>
-              <a class="btn text-primary" href="/artikel">Baca Lebih Lanjut<i class="bi bi-arrow-right"></i></a>
+              <a class="btn text-primary" href="artikel/{{$item->heading}}">Baca Lebih Lanjut<i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
-
-        <!-- 2 -->
-        <div class="col-lg-3 col-md-6">
-          <div class="service-item h-card bg-white rounded d-flex flex-column align-items-center text-center">
-            <img class="w-100 object-fit" src="img/artikel/2.webp" loading="lazy" alt="perangko prisma" height="150" alt="" />
-            <div class="p-4 pb-4">
-              <h4 class="text-uppercase mb-3">Kunjungan-1</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum.</p>
-              <a class="btn text-primary" href="/artikel">Baca Lebih Lanjut<i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3 -->
-        <div class="col-lg-3 col-md-6">
-          <div class="service-item h-card bg-white rounded d-flex flex-column align-items-center text-center">
-            <img class="w-100 object-fit" src="img/artikel/3.webp" loading="lazy" alt="perangko prisma" height="150" alt="" />
-            <div class="p-4 pb-4">
-              <h4 class="text-uppercase mb-3">Kunjungan-2</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque.</p>
-              <a class="btn text-primary" href="/artikel">Baca Lebih Lanjut<i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4 -->
-        <div class="col-lg-3 col-md-6">
-          <div class="service-item h-card bg-white rounded d-flex flex-column align-items-center text-center">
-            <img class="w-100 object-fit" src="img/artikel/4.webp" loading="lazy" alt="kegiatan museum" height="150" alt="" />
-            <div class="p-4 pb-4">
-              <h4 class="text-uppercase mb-3">Kunjungan-3</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut.</p>
-              <a class="btn text-primary" href="/artikel">Baca Lebih Lanjut <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
+        @endforeach
       </div>
-    </div>
     <!-- dashboard End -->
 
     <!-- Reservasi Start -->

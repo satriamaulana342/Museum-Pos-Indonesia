@@ -30,7 +30,7 @@ class ArticleController extends Controller
 
         $extension = $validated['image']->getClientOriginalExtension();
         $newName =  'thumbnail'. '_' .now()->timestamp. '.' .$extension;
-        $validated['image']->storeAs('article', $newName);
+        $validated['image']->storeAs('public/article', $newName);
 
     
         $article = Article::create([
@@ -81,7 +81,7 @@ class ArticleController extends Controller
         if($request->file('image')){
             $extension = $validated['image']->getClientOriginalExtension();
             $newName =  'thumbnail'. '_' .now()->timestamp. '.' .$extension;
-            $validated['image']->storeAs('article', $newName);
+            $validated['image']->storeAs('public/article', $newName);
         }else{
             $newName = $artikel->thumbnail;
         }

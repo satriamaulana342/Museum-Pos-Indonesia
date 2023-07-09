@@ -58,7 +58,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/dashboard/article/add" data-toggle="collapse" data-target="#collapseTwo"
+                <a class="nav-link collapsed" href="/dashboard/artikel/add" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Add Artikel</span>

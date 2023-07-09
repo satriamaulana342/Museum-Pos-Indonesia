@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,9 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 
 Route::get('/profil', function () {
     return view('profil');
@@ -40,6 +41,8 @@ Route::get('/contact', function () {
 Route::get('/reservasi', function () {
     return view('reservasi');
 });
+
+Route::get('/',[IndexController::class,'index']);
 
 // Route::get('/artikel', function () {
 //     return view('artikel');
