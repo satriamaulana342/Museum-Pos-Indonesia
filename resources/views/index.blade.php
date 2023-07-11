@@ -139,6 +139,7 @@
         </div>
         @endforeach
       </div>
+    </div>
     <!-- dashboard End -->
 
     <!-- Reservasi Start -->
