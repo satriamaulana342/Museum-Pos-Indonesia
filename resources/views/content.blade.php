@@ -42,7 +42,7 @@
     <!-- Navbar Start -->
     <div class="container-fluid bg-light fixed-top shadow-sm px-5 pe-lg-0">
       <nav class="navbar navbar-expand-lg navbar-dark navbar-light py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand">
+        <a href="/" class="navbar-brand">
           <h1 class="m-2 display-6" style="font-weight: 300">
             <img src="../img/logo.webp" alt="" />
           </h1>
@@ -52,12 +52,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto py-0">
-            <a href="../../index.html" class="nav-item nav-link">Beranda</a>
-            <a href="../../profil.html" class="nav-item nav-link">Profil</a>
-            <a href="../../sejarah.html" class="nav-item nav-link">Sejarah</a>
-            <a href="../../ruangan.html" class="nav-item nav-link">Ruangan</a>
-            <a href="../../contact.html" class="nav-item nav-link">Kontak</a>
-            <a href="../../Reservasi.html" class="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block">Reservasi <i class="bi bi-arrow-right"></i></a>
+            <a href="/" class="nav-item nav-link">Beranda</a>
+            <a href="/profil" class="nav-item nav-link">Profil</a>
+            <a href="/sejarah" class="nav-item nav-link">Sejarah</a>
+            <a href="/ruangan" class="nav-item nav-link">Ruangan</a>
+            <a href="/contact" class="nav-item nav-link">Kontak</a>
+            <a href="/reservasi" class="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block">Reservasi <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
       </nav>
