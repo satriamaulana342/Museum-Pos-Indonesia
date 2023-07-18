@@ -58,7 +58,7 @@
 
             <!-- Nav Item - Artikel Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/dashboard/artikel/add">
+                <a class="nav-link collapsed" href="/dashboard/artikel">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Artikel</span>
                 </a>
@@ -66,7 +66,7 @@
 
             <!-- Nav Item - Profile Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="">
+                <a class="nav-link collapsed" href="/dashboard/profil">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Profile</span>
                 </a>
@@ -74,7 +74,7 @@
 
             <!-- Nav Item - Sejarah Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="">
+                <a class="nav-link collapsed" href="/dashboard/sejarah">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Sejarah</span>
                 </a>
@@ -82,7 +82,7 @@
 
             <!-- Nav Item - Ruangan Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href=""       >
+                <a class="nav-link collapsed" href="/dashboard/ruangan">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Ruangan</span>
                 </a>

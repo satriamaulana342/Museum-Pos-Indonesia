@@ -78,36 +78,18 @@
         <h1 class="display-5 text-uppercase mb-4">Sejarah Perposan</h1>
       </div>
       <div class="row g-5">
+        @foreach ($sejarah->take(4) as $item)
         <div class="col-lg-4 col-md-6">
           <div class="service-item h-card card bg-white d-flex flex-column align-items-center text-center">
-            <img class="w-100 object-fit" src="img/kerajaan.webp" height="200" alt="" />
+            <img class="w-100 object-fit" src="{{asset('/storage/photos/1/Thumbnails/'. $item->thumbnail)}}" height="200" alt="" />
             <div class="p-4 pb-4">
-              <h3 class="text-uppercase mb-3">Perposan pada masa kerajaan</h3>
-              <p style="font-size: 15px">Pelajari sistem perposan pada masa kerajaan</p>
-              <a href="page/kerajaan.html" class="btn btn-primary">Baca lebih lanjut</a>
+              <h3 class="text-uppercase mb-3">{{$item->heading}}</h3>
+              {!! "<p style='font-size: 15px'>" . substr(strip_tags($item->content), 0, 100). "</p>" !!}
+              <a href="sejarah/{{$item->slug}}" class="btn btn-primary">Baca lebih lanjut</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item h-card bg-white d-flex flex-column card align-items-center text-center">
-            <img class="w-100 object-fit" src="img/sebelum.webp" height="200" alt="" />
-            <div class="p-4 pb-4">
-              <h3 class="text-uppercase mb-3">Perposan pada masa sebelum kemerdekaan</h3>
-              <p style="font-size: 15px">Pelajari Perposan pada masa penjajahan belanda hingga jepang</p>
-              <a href="page/sebelum.html" class="btn btn-primary">Baca lebih lanjut</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item card h-card bg-white rounded d-flex flex-column align-items-center text-center">
-            <img class="w-100 object-fit" src="img/setelah.webp" height="200" alt="" />
-            <div class="p-4 pb-4">
-              <h3 class="text-uppercase mb-3">Perposan pada masa setelah kemerdekaan</h3>
-              <p style="font-size: 15px">Pelajari sistem perposan pada masa setelah kemerdekaan hingga sekarang</p>
-              <a href="page/setelah.html" class="btn btn-primary">Baca lebih lanjut</a>
-            </div>
-          </div>
-        </div>
+        @endforeach
       </div>
     </div>
     <!-- dashboard End -->

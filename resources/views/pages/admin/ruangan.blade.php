@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="conteiner">
-      <a href="/dashboard/arsip/artikel" class="btn btn-primary">Artikel yang diarsipkan</a>
-      <a href="/dashboard/artikel/add" class="btn btn-success">Tambah Artikel</a>
+      <a href="/dashboard/arsip/ruangan" class="btn btn-primary">Ruangan yang diarsipkan</a>
+      <a href="/dashboard/ruangan/add" class="btn btn-success">Tambah ruangan</a>
     </div>
     <div class="container">
       @if (Session::has('status'))
@@ -30,19 +30,19 @@
               </tr>
             </thead>
             <tbody>
-              @foreach ($artikel as $item)
+              @foreach ($ruangan as $item)
               <tr>
                 <th scope="row"></th>
                 <td><img src="{{asset('/storage/photos/1/Thumbnails/'. $item->thumbnail)}}" alt="" width="150"></td>
                 <td>{{$item->heading}}</td>
                 <td>
-                  <a href="/dashboard/artikel/{{$item->id}}" class="btn btn-primary">Edit</a>
-                  <form action="/dashboard/artikel/{{$item->id}}/delete" method="POST">
+                  <a href="/dashboard/ruangan/{{$item->id}}" class="btn btn-primary">Edit</a>
+                  <form action="/dashboard/ruangan/{{$item->id}}/delete" method="POST">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Delete</button>
                   </form>
-                  <form action="/dashboard/artikel/{{$item->id}}/arsip" method="POST">
+                  <form action="/dashboard/ruangan/{{$item->id}}/arsip" method="POST">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-success">Arsip</button>

@@ -79,12 +79,12 @@
         @foreach ($artikel as $item)       
         <div class="col-lg-4 col-md-6">
           <div class="service-item h-card bg-white d-flex flex-column align-items-center text-center">
-            <img class="w-100 object-fit" src="{{asset('storage/article/'. $item->thumbnail)}}" height="200" alt="" />
+            <img class="w-100 object-fit" src="{{asset('/storage/photos/1/Thumbnails/'. $item->thumbnail)}}" height="200" alt="" />
 
             <div class="p-4 pb-4">
               <h4 class="text-uppercase mb-3">{{$item->heading}}</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, eveniet.</p>
-              <a class="btn text-primary" href="artikel/{{$item->heading}}"> Baca Lebih lanjut <i class="bi bi-arrow-right"></i></a>
+              {!! "<p>" . substr(strip_tags($item->content), 0, 100). "</p>" !!}
+              <a class="btn text-primary" href="artikel/{{$item->slug}}"> Baca Lebih lanjut <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>

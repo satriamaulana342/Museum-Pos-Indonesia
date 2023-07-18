@@ -77,41 +77,19 @@
       <div class="row g-5">
         <h1 class="display-5 text-uppercase mb-4 text-center">Ruangan Museum POS indonesia</h1>
         <!-- 1 -->
+        @foreach ($ruangan->take(4) as $item)
         <div class="col-lg-4 col-md-6">
           <div class="service-item h-card bg-white d-flex flex-column align-items-center text-center">
-            <img class="w-100 object-fit" src="img/filateli.webp" height="200" alt="" />
+            <img class="w-100 object-fit" src="{{asset('/storage/photos/1/Thumbnails/'. $item->thumbnail)}}" height="200" alt="" />
 
             <div class="p-4 pb-4">
-              <h4 class="text-uppercase mb-3">Ruangan Koleksi Filateli</h4>
-              <p>Pelajari sistem Perposan pada masa kerajaan</p>
-              <a class="btn btn-primary" href="/ruangan"> Baca Lebih lanjut <i class="bi bi-arrow-right"></i></a>
+              <h4 class="text-uppercase mb-3">{{$item->heading}}</h4>
+              {!! "<p style='font-size: 15px'>" . substr(strip_tags($item->content), 0, 100). "</p>" !!}
+              <a class="btn btn-primary" href="ruangan/{{$item->slug}}"> Baca Lebih lanjut <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
-
-        <!-- 2 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item h-card bg-white rounded d-flex flex-column align-items-center text-center">
-            <img class="w-100 object-fit" src="img/peralatan.webp" height="200" alt="" />
-            <div class="p-4 pb-4">
-              <h4 class="text-uppercase mb-3">Ruangan Koleksi peralatan</h4>
-              <p>Ruangan ini berisi peralatan peralatan yang digunakan oleh pos indonesia</p>
-              <a class="btn btn-primary" href="page/peralatan.html">Baca Lebih Lanjut<i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3  -->
-        <div class="col-lg-4 col-md-12">
-          <div class="service-item h-card bg-white rounded d-flex flex-column align-items-center text-center">
-            <img class="w-100 object-fit" src="img/surat.webp" height="200" alt="" />
-            <div class="p-4 pb-4">
-              <h4 class="text-uppercase mb-3">Ruangan Koleksi sejarah</h4>
-              <p>Ruangan surat emas raja</p>
-              <a class="btn btn-primary" href="page/ruang/sejarah">Baca Lebih Lanjut<i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
+        @endforeach
       </div>
     </div>
     <!-- dashboard End -->

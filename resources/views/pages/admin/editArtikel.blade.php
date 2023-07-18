@@ -35,17 +35,18 @@
 
         <div class="form-group">
             <label for="image">Pilih Gambar:</label>
-            <img src="{{asset('storage/article/'. $data->thumbnail)}}" alt="" width="150">
+            <img src="{{asset('/storage/photos/1/Thumbnails/'. $item->thumbnail)}}" alt="" width="150">
             <input type="file" name="image" id="image" class="form-control">
         </div>
 
         <div class="form-group">
             <label for="content">Content</label>
-            <textarea name="content" id="content" rows="8" cols="40" >{{$data->content}}</textarea>
+            <textarea id="my-editor" name="content" class="form-control">{{$data->content}}</textarea>
         </div>
     
         <button type="submit" class="btn btn-primary">Edit</button>
     </form>
 
 </body>
+@include('ckeeditor/setting');
 </html>

@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <h1>Halaman Tambah Artikel</h1>
+    <h1>Halaman Tambah Ruangan</h1>
     @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
@@ -26,15 +26,7 @@
         </div>
 
         <div class="form-group">
-            <select name="category" id="option">
-                <option value="1">Sejarah</option>
-                <option value="2">Otomotif</option>
-                <option value="3">Teknologi</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label for="image">Pilih Gambar:</label>
+            <label for="image">Select Thumbnail :</label>
             <input type="file" name="image" id="image" class="form-control">
         </div>
 
