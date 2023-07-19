@@ -35,14 +35,17 @@ class RoomController extends Controller
             'content' => 'required'
         ]);
 
-        $extension = $validated['image']->getClientOriginalExtension();
-        $newName =  'thumbnail'. '_' .now()->timestamp. '.' .$extension;
-        $validated['image']->storeAs('photos/1/Thumbnails', $newName);
+        if ($request->file('image')) {
+            $filename = $validated['image']->getClientOriginalName();
+            $validated['image']->storeAs('photos/2/Thumbnails', $filename, 'public');
+        } else {
+            $filename = "default.png";
+        }
 
         $ruangan = Room::create([
             'heading' => $validated['heading'],
             'slug' => Str::slug($validated['heading']),
-            'thumbnail' => $newName,
+            'thumbnail' => $filename,
             'content' => $validated['content'],
         ]);
 
@@ -73,18 +76,17 @@ class RoomController extends Controller
             'content' => 'required'
         ]);
 
-        if($request->file('image')){
-            $extension = $validated['image']->getClientOriginalExtension();
-            $newName =  'thumbnail'. '_' .now()->timestamp. '.' .$extension;
-            $validated['image']->storeAs('photos/1/Thumbnails', $newName);
-        }else{
-            $newName = $ruangan->thumbnail;
+        if ($request->file('image')) {
+            $filename = $validated['image']->getClientOriginalName();
+            $validated['image']->storeAs('photos/2/Thumbnails', $filename, 'public');
+        } else {
+            $filename = $ruangan -> thumbnail;
         }
        
         $ruangan->update([
             'heading' => $validated['heading'],
             'slug' => Str::slug($validated['heading']),
-            'thumbnail' => $newName,
+            'thumbnail' => $filename,
             'content' => $validated['content'],
         ]);
 

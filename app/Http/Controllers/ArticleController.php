@@ -29,15 +29,18 @@ class ArticleController extends Controller
             'content' => 'required'
         ]);
 
-        $extension = $validated['image']->getClientOriginalExtension();
-        $newName =  'thumbnail'. '_' .now()->timestamp. '.' .$extension;
-        $validated['image']->storeAs('photos/1/Thumbnails', $newName);
+        if ($request->file('image')) {
+            $filename = $validated['image']->getClientOriginalName();
+            $validated['image']->storeAs('photos/2/Thumbnails', $filename, 'public');
+        } else {
+            $filename = "default.png";
+        }
 
     
         $article = Article::create([
             'id_category' => intval($validated['category']),
             'heading' => $validated['heading'],
-            'thumbnail' => $newName,
+            'thumbnail' => $filename,
             'content' => $validated['content'],
             'slug' => Str::slug($validated['heading'])
         ]);
@@ -85,18 +88,17 @@ class ArticleController extends Controller
             'content' => 'required'
         ]);
 
-        if($request->file('image')){
-            $extension = $validated['image']->getClientOriginalExtension();
-            $newName =  'thumbnail'. '_' .now()->timestamp. '.' .$extension;
-            $validated['image']->storeAs('photos/1/Thumbnails', $newName);
-        }else{
-            $newName = $artikel->thumbnail;
+        if ($request->file('image')) {
+            $filename = $validated['image']->getClientOriginalName();
+            $validated['image']->storeAs('photos/2/Thumbnails', $filename, 'public');
+        } else {
+            $filename = $artikel -> thumbnail;
         }
-       
+        
         $artikel->update([
             'id_category' => intval($validated['category']),
             'heading' => $validated['heading'],
-            'thumbnail' => $newName,
+            'thumbnail' => $filename,
             'content' => $validated['content'],
             'slug' => Str::slug($validated['heading'])
         ]);

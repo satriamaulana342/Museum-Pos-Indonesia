@@ -129,7 +129,7 @@
         @foreach($data->take(4) as $item)
         <div class="col-lg-3 col-md-6">
           <div class="service-item h-card bg-white d-flex flex-column align-items-center text-center">
-            <img class="w-100 object-fit" src="{{asset('/storage/photos/1/Thumbnails/'. $item->thumbnail)}}" alt="foto kerajaan" loading="lazy" height="150" alt="" />
+            <img class="w-100 object-fit" src="{{asset('/storage/photos/2/Thumbnails/'. $item->thumbnail)}}" alt="foto kerajaan" loading="lazy" height="150" alt="" />
            
             <div class="p-4 pb-4">
               <h4 class="text-uppercase mb-3">{{$item->heading}}</h4>

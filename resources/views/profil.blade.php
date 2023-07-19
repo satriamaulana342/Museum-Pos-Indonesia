@@ -71,7 +71,7 @@
       <div class="row g-5">
         <div class="col-lg-5 pb-5" style="min-height: 400px">
           <div class="position-relative bg-dark-radial h-50 ms-5">
-            <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="{{ url('asset/gedung2.webp') }}" style="object-fit: cover" >
+            <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="{{asset('/storage/photos/2/Profil/'. $profil->image)}}" style="object-fit: cover" >
           </div>
         </div>
         <div class="col-lg-7">
@@ -129,7 +129,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>  
     </div>
     <!-- Footer End -->
 

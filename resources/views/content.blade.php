@@ -69,7 +69,7 @@
       <h1 class="text-center">{{$content->heading}}</h1>
       <p class="text-lite p-big">{{$posted}}</p>
       <div class="d-flex justify-content-center my-3">
-        <img src="{{asset('/storage/photos/1/Thumbnails/'. $content->thumbnail)}}"  width="300" alt="" />
+        <img src="{{asset('/storage/photos/2/Thumbnails/'. $content->thumbnail)}}"  width="300" alt="" />
       </div>
       <div class="text-justify p-big">
         @foreach (explode(PHP_EOL, $content->content) as $paragraph)

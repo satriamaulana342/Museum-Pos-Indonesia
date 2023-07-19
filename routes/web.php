@@ -114,7 +114,3 @@ Route::get('/ruangan/{slug}',[RoomController::class,'content']);
  Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
      Lfm::routes();
  });
-
-
-
-

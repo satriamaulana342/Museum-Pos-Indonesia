@@ -29,9 +29,8 @@ class ProfileController extends Controller
         $filename = $profil->image; // Inisialisasi variabel $filename dengan nilai default
 
         if ($request->file('image')) {
-            $extension = $validated['image']->getClientOriginalExtension();
             $filename = $validated['image']->getClientOriginalName();
-            $validated['image']->storeAs('photos/1/Profile', $filename);
+            $validated['image']->storeAs('photos/2/Profil', $filename, "public");
         }
 
         $profil->update([

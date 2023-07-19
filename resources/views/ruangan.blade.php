@@ -77,10 +77,10 @@
       <div class="row g-5">
         <h1 class="display-5 text-uppercase mb-4 text-center">Ruangan Museum POS indonesia</h1>
         <!-- 1 -->
-        @foreach ($ruangan->take(4) as $item)
+        @foreach ($ruangan as $item)
         <div class="col-lg-4 col-md-6">
           <div class="service-item h-card bg-white d-flex flex-column align-items-center text-center">
-            <img class="w-100 object-fit" src="{{asset('/storage/photos/1/Thumbnails/'. $item->thumbnail)}}" height="200" alt="" />
+            <img class="w-100 object-fit" src="{{asset('/storage/photos/2/Thumbnails/'. $item->thumbnail)}}" height="200" alt="" />
 
             <div class="p-4 pb-4">
               <h4 class="text-uppercase mb-3">{{$item->heading}}</h4>

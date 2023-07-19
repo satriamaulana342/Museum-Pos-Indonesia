@@ -33,7 +33,7 @@
               @foreach ($ruangan as $item)
               <tr>
                 <th scope="row"></th>
-                <td><img src="{{asset('/storage/photos/1/Thumbnails/'. $item->thumbnail)}}" alt="" width="150"></td>
+                <td><img src="{{asset('/storage/photos/2/Thumbnails/'. $item->thumbnail)}}" alt="" width="150"></td>
                 <td>{{$item->heading}}</td>
                 <td>
                   <a href="/dashboard/ruangan/{{$item->id}}" class="btn btn-primary">Edit</a>

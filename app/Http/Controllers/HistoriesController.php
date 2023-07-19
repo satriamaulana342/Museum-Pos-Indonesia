@@ -35,14 +35,17 @@ class HistoriesController extends Controller
             'content' => 'required'
         ]);
 
-        $extension = $validated['image']->getClientOriginalExtension();
-        $newName =  'thumbnail'. '_' .now()->timestamp. '.' .$extension;
-        $validated['image']->storeAs('photos/1/Thumbnails', $newName);
+        if ($request->file('image')) {
+            $filename = $validated['image']->getClientOriginalName();
+            $validated['image']->storeAs('photos/2/Thumbnails', $filename, 'public');
+        } else {
+            $filename = "default.png";
+        }
 
         $sejarah = Histories::create([
             'heading' => $validated['heading'],
             'slug' => Str::slug($validated['heading']),
-            'thumbnail' => $newName,
+            'thumbnail' => $filename,
             'content' => $validated['content'],
         ]);
 
@@ -73,18 +76,17 @@ class HistoriesController extends Controller
             'content' => 'required'
         ]);
 
-        if($request->file('image')){
-            $extension = $validated['image']->getClientOriginalExtension();
-            $newName =  'thumbnail'. '_' .now()->timestamp. '.' .$extension;
-            $validated['image']->storeAs('photos/1/Thumbnails', $newName);
-        }else{
-            $newName = $sejarah->thumbnail;
+        if ($request->file('image')) {
+            $filename = $validated['image']->getClientOriginalName();
+            $validated['image']->storeAs('photos/2/Thumbnails', $filename, 'public');
+        } else {
+            $filename = $sejarah -> thumbnail;
         }
-       
+        
         $sejarah->update([
             'heading' => $validated['heading'],
             'slug' => Str::slug($validated['heading']),
-            'thumbnail' => $newName,
+            'thumbnail' => $filename,
             'content' => $validated['content'],
         ]);
 

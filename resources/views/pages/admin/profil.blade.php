@@ -56,7 +56,7 @@
 
         <div class="form-group">
             <label for="image">Pilih Gambar:</label>
-            <img src="{{asset('/storage/photos/1/Profile/'. $profil->image)}}" alt="" width="150">
+            <img src="{{asset('/storage/photos/2/Profile/'. $profil->image)}}" alt="" width="150">
             <input type="file" name="image" id="image" class="form-control">
         </div>
 
