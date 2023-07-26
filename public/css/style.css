@@ -450,3 +450,13 @@ body {
 .fixed-top {
     margin-bottom: 100px;
 }
+
+.form-container {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin: 75px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
