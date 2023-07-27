@@ -125,12 +125,11 @@
     <div id="dashboard" class="container-fluid bg-light py-6 px-5">
       <div class="row g-5">
         <h1 class="display-5 text-uppercase mb-4 text-center">Highlight Kunjungan Museum</h1>
-        <!-- 1 -->
         @foreach($data->take(4) as $item)
         <div class="col-lg-3 col-md-6">
           <div class="service-item h-card bg-white d-flex flex-column align-items-center text-center">
             <img class="w-100 object-fit" src="{{asset('/storage/photos/2/Thumbnails/'. $item->thumbnail)}}" alt="foto kerajaan" loading="lazy" height="150" alt="" />
-           
+            
             <div class="p-4 pb-4">
               <h4 class="text-uppercase mb-3">{{$item->heading}}</h4>
               {!! "<p>" . substr(strip_tags($item->content), 0, 100). "</p>" !!}
@@ -142,7 +141,15 @@
       </div>
     </div>
     <!-- dashboard End -->
-
+    {{-- tes --}}
+    {{-- <div id="dashboard" class="container-fluid bg-white py-6 px-5">
+      <div class="row g-5">
+        <h1 class="display-5 text-uppercase mb-4 text-center">Ada Apa Dengan Museum?</h1>
+        <div class="col-lg-3 col-md-6">
+        </div>
+      </div>
+    </div> --}}
+    {{-- tes --}}
     <!-- Reservasi Start -->
     <div class="container-fluid py-6 px-5">
       <div class="row gx-5">
@@ -184,7 +191,7 @@
                 <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://twitter.com/posindonesia"><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.facebook.com/posindonesia/"><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.linkedin.com/company/pt-pos-indonesia-persero/"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="https://www.instagram.com/posindonesia.ig/posindonesia.ig/"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="https://www.instagram.com/posindonesia.ig//posindonesia.ig/"><i class="fab fa-instagram"></i></a>
               </div>
             </div>
           </div>
