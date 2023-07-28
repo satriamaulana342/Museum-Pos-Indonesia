@@ -98,7 +98,24 @@
                     <input type="text" name="namaReservasi" class="form-control border-0" placeholder="Nama" style="height: 55px" />
                   </div>
                   <div class="col-12 col-sm-6">
+                    <input type="number" name="pengunjung" class="form-control border-0" placeholder="Jumlah Pengunjung / Number of Visitors" style="height: 55px" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <select name="kelompok" class="form-control border-0 bg-white" placeholder="Rombongan/Pribadi / Group/Personal" style="height: 55px;" >
+                      <option value="" selected disabled>Rombongan/Pribadi / Group/Personal</option>
+                      <option value="pribadi">Pribadi / Personal</option>
+                      <option value="rombongan">Rombongan / Group</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-sm-6">
                     <input type="number" name="no.Telephone" class="form-control border-0" placeholder="No.Telephone" style="height: 55px" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <select name="nationality" class="form-control border-0 bg-white" placeholder="Kewarganegaraan / Nationality" style="height: 55px;" >
+                      <option value="" selected disabled>Kewarganegaraan / Nationality</option>
+                      <option value="WNI">WNI (Warga Negara Indonesia)</option>
+                      <option value="WNA">WNA (Warga Negara Asing)</option>
+                    </select>
                   </div>
                   <div class="col-12 col-sm-6">
                     <div class="date" id="date" data-target-input="nearest">
@@ -106,10 +123,18 @@
                     </div>
                   </div>
                   <div class="col-12 col-sm-6">
-                    <select name="nationality" class="form-control border-0 bg-white" placeholder="Kewarganegaraan / Nationality" style="height: 55px;" >
-                      <option value="" selected disabled>Kewarganegaraan / Nationality</option>
-                      <option value="WNI">WNI (Warga Negara Indonesia)</option>
-                      <option value="WNA">WNA (Warga Negara Asing)</option>
+                    <select name="kelompok" class="form-control border-0 bg-white" placeholder="Waktu Kunjungan / Time" style="height: 55px;" >
+                      <option value="" selected disabled>Waktu Kunjungan / Time</option>
+                      <option value="0900">09:00</option>
+                      <option value="0930">09:30</option>
+                      <option value="1000">10:00</option>
+                      <option value="1030">10:30</option>
+                      <option value="1100">11:00</option>
+                      <option value="1130">11:30</option>
+                      <option value="1300">13:00</option>
+                      <option value="1330">13:30</option>
+                      <option value="1400">14:00</option>
+                      <option value="1430">14:30</option>
                     </select>
                   </div>
                   <div class="col-12 col-sm-6">
@@ -120,10 +145,16 @@
                     </select>
                   </div>
                   <div class="col-12 col-sm-6">
-                    <select name="kelompok" class="form-control border-0 bg-white" placeholder="Rombongan/Pribadi / Group/Personal" style="height: 55px;" >
-                      <option value="" selected disabled>Rombongan/Pribadi / Group/Personal</option>
-                      <option value="pribadi">Pribadi / Personal</option>
-                      <option value="rombongan">Rombongan / Group</option>
+                    <select name="jenjang" class="form-control border-0 bg-white" placeholder="Jenjang Pendidikan / Educational
+                    " style="height: 55px;" >
+                      <option value="" selected disabled>Jenjang Pendidikan / Educational</option>
+                      <option value="UMUM">Umum</option>
+                      <option value="SLB">SLB</option>
+                      <option value="KB/TK/PAUD">KB/TK/PAUD</option>
+                      <option value="SD">SD</option>
+                      <option value="SLTP">SLTP</option>
+                      <option value="SLTA">SLTA</option>
+                      <option value="Mahasiswa">Mahasiswa</option>
                     </select>
                   </div>
                   <div class="col-12">
