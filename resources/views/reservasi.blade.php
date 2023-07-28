@@ -106,7 +106,25 @@
                     </div>
                   </div>
                   <div class="col-12 col-sm-6">
-                    <input type="text" name="jumlahKunjungan" class="form-control border-0" placeholder="Jumlah Pengunjung" style="height: 55px" />
+                    <select name="nationality" class="form-control border-0 bg-white" placeholder="Kewarganegaraan / Nationality" style="height: 55px;" >
+                      <option value="" selected disabled>Kewarganegaraan / Nationality</option>
+                      <option value="WNI">WNI (Warga Negara Indonesia)</option>
+                      <option value="WNA">WNA (Warga Negara Asing)</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <select name="kelompok" class="form-control border-0 bg-white" placeholder="Kelompok Kunjungan / Category" style="height: 55px;" >
+                      <option value="" selected disabled>Kelompok Kunjungan / Category</option>
+                      <option value="umum">Umum</option>
+                      <option value="pelajar">Pelajar</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <select name="kelompok" class="form-control border-0 bg-white" placeholder="Rombongan/Pribadi / Group/Personal" style="height: 55px;" >
+                      <option value="" selected disabled>Rombongan/Pribadi / Group/Personal</option>
+                      <option value="pribadi">Pribadi / Personal</option>
+                      <option value="rombongan">Rombongan / Group</option>
+                    </select>
                   </div>
                   <div class="col-12">
                     <button class="btn btn-primary w-100 py-3" type="submit">Reservasi Sekarang</button>
