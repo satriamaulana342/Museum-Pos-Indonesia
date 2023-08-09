@@ -23,7 +23,7 @@
         <table class="table">
             <thead>
               <tr>
-                <th scope="col">#</th>
+                <th scope="col"></th>
                 <th scope="col">Gambar</th>
                 <th scope="col">Judul</th>
                 <th scope="col">Aksi</th>

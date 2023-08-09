@@ -86,14 +86,14 @@
                   <div class="">
                     <h2 class="text-body text-start">Jenis Reservasi</h2>
                     <label class="btn btn-primary p-xl my-3">
-                      <input type="radio" name="reservasi" value="perorangan" class="btn-radio" required />
+                      <input type="radio" name="reservasi" value="perorangan" class="btn-radio" required="">
                       Perorangan
                     </label>
                     <label class="btn btn-primary p-xl my-3">
-                      <input type="radio" name="reservasi" value="rombongan" class="btn-radio" required />
+                      <input type="radio" name="reservasi" value="rombongan" class="btn-radio" required="">
                       Rombongan
                     </label>
-                  </div>
+                  </div>    
                   <div class="col-12 col-sm-6">
                     <input type="text" name="namaReservasi" class="form-control border-0" placeholder="Nama" style="height: 55px" />
                   </div>
