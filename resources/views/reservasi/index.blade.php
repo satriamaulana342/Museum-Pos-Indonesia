@@ -80,89 +80,31 @@
             <p class="mb-5 p-big ms-5">Sekarang anda dapat reservasi kunjungan / rombongan langsung melalui web, cukup pilih jenis rombongan yang ada</p>
           </div>
           <div class="col-lg-12 p-big my-5">
-            <div class="p-5">
-              <form>
+              <div class="p-5"> 
                 <div class="row g-3">
-                  <div class="">
                     <h2 class="text-body text-start">Jenis Reservasi</h2>
-                    <label class="btn btn-primary p-xl my-3">
-                      <input type="radio" name="reservasi" value="perorangan" class="btn-radio" required="">
-                      Perorangan
-                    </label>
-                    <label class="btn btn-primary p-xl my-3">
-                      <input type="radio" name="reservasi" value="rombongan" class="btn-radio" required="">
-                      Rombongan
-                    </label>
-                  </div>    
-                  <div class="col-12 col-sm-6">
-                    <input type="text" name="namaReservasi" class="form-control border-0" placeholder="Nama" style="height: 55px" />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input type="number" name="pengunjung" class="form-control border-0" placeholder="Jumlah Pengunjung / Number of Visitors" style="height: 55px" />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <select name="kelompok" class="form-control border-0 bg-white" placeholder="Rombongan/Pribadi / Group/Personal" style="height: 55px;" >
-                      <option value="" selected disabled>Rombongan/Pribadi / Group/Personal</option>
-                      <option value="pribadi">Pribadi / Personal</option>
-                      <option value="rombongan">Rombongan / Group</option>
-                    </select>
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input type="number" name="no.Telephone" class="form-control border-0" placeholder="No.Telephone" style="height: 55px" />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <select name="nationality" class="form-control border-0 bg-white" placeholder="Kewarganegaraan / Nationality" style="height: 55px;" >
-                      <option value="" selected disabled>Kewarganegaraan / Nationality</option>
-                      <option value="WNI">WNI (Warga Negara Indonesia)</option>
-                      <option value="WNA">WNA (Warga Negara Asing)</option>
-                    </select>
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <div class="date" id="date" data-target-input="nearest">
-                      <input type="date" class="form-control border-0 datetimepicker-input" placeholder="Tanggal kunjungan" data-target="#date" data-toggle="datetimepicker" style="height: 55px" />
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <select name="kelompok" class="form-control border-0 bg-white" placeholder="Waktu Kunjungan / Time" style="height: 55px;" >
-                      <option value="" selected disabled>Waktu Kunjungan / Time</option>
-                      <option value="0900">09:00</option>
-                      <option value="0930">09:30</option>
-                      <option value="1000">10:00</option>
-                      <option value="1030">10:30</option>
-                      <option value="1100">11:00</option>
-                      <option value="1130">11:30</option>
-                      <option value="1300">13:00</option>
-                      <option value="1330">13:30</option>
-                      <option value="1400">14:00</option>
-                      <option value="1430">14:30</option>
-                    </select>
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <select name="kelompok" class="form-control border-0 bg-white" placeholder="Kelompok Kunjungan / Category" style="height: 55px;" >
-                      <option value="" selected disabled>Kelompok Kunjungan / Category</option>
-                      <option value="umum">Umum</option>
-                      <option value="pelajar">Pelajar</option>
-                    </select>
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <select name="jenjang" class="form-control border-0 bg-white" placeholder="Jenjang Pendidikan / Educational
-                    " style="height: 55px;" >
-                      <option value="" selected disabled>Jenjang Pendidikan / Educational</option>
-                      <option value="UMUM">Umum</option>
-                      <option value="SLB">SLB</option>
-                      <option value="KB/TK/PAUD">KB/TK/PAUD</option>
-                      <option value="SD">SD</option>
-                      <option value="SLTP">SLTP</option>
-                      <option value="SLTA">SLTA</option>
-                      <option value="Mahasiswa">Mahasiswa</option>
-                    </select>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100 py-3" type="submit">Reservasi Sekarang</button>
-                  </div>
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Perorangan</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Rombongan</a>
+                      </li>
+                    </ul>
                 </div>
-              </form>
-            </div>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    @include('reservasi.form.perorangan')
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    @include('reservasi.form.rombongan')
+                  </div>               
+                </div>
+                <div id="loading" style="display: none">
+                  <div class="d-flex justify-content-center"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div></div>
+                </div>
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -224,6 +166,7 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
@@ -232,8 +175,140 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+    function toastAlert(icon, msg) {
+
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+    });
+
+    Toast.fire({
+        icon: icon,
+        title: msg,
+    });
+    }
+
+    $(document).ready(function() {
+      $('.numeric-input').on('input', function() {
+        var inputValue = $(this).val();
+        var numericValue = inputValue.replace(/[^0-9]/g, ''); // Hapus karakter selain angka
+        $(this).val(numericValue); // Setel nilai input dengan hanya angka
+      });
+
+      // check jumlah pengunjung hanya bisa 5
+      $('#individualVisitors').on('input', function() {
+        var inputValue = $(this).val();
+        if(inputValue > 5){
+          $(this).val(5);
+        }
+      });
+
+      $('#individualReservationDate').change(function() {
+        var selectedDate = new Date($(this).val());
+        var dayOfWeek = selectedDate.getDay();
+        var selectOptions = ''; 
+        if (dayOfWeek === 6 ) {
+          for (var i = 9; i <= 13; i++) {
+            selectOptions += '<option value="' + i + ':00">' + i + ':00</option>';
+          }
+        } else if (dayOfWeek === 1 || dayOfWeek === 2 || dayOfWeek === 3 || dayOfWeek === 4 || dayOfWeek === 5 ) {
+          for (var i = 9; i <= 15; i++) {
+            selectOptions += '<option value="' + i + ':00">' + i + ':00</option>';
+          }
+        } else {
+          selectOptions += '<option value="" selected disabled>Waktu Kunjungan / Time</option>';
+        }
+        $('#individualReservationTime').html(selectOptions);
+      });
+
+
+      $('#groupReservationDate').change(function() {
+        var selectOptions = '';
+        // ajax request get 
+        $.ajax({
+          url: "{{ url('/reservasi/cek-reservasi') }}",
+          method: 'GET',
+          data: {
+            date: $(this).val()
+          },
+          dataType: "json",
+          success: function(response) {
+            $.each(response.time, function(index, value) {
+              selectOptions += '<option value="' + value + '">' + value + '</option>';
+            });
+            if (response.time.length == 0) {
+              selectOptions += '<option value="" selected disabled>Waktu Kunjungan / Time</option>';
+            }
+            $('#groupReservationTime').html(selectOptions);
+            
+          },
+          error: function(error) {
+            toastAlert("error", "Terjadi kesalahan pada server");
+          }
+        });
+        $('#groupReservationTime').html(selectOptions);
+      });
+
+    });
+
+    
+
+    $(document).on("submit", "#individualReservationForm", function () {
+      $('#individualReservationForm button[type=submit]').hide();
+      $('#loading').show();
+      $.ajax({
+        url: "{{ url('/reservasi/add') }}",
+        method: 'POST',
+        data: new FormData(this),
+        processData: false,
+        contentType: false,
+        dataType: "json",
+        success: function(response) {
+          toastAlert("success", response.message);
+          $('#individualReservationForm').trigger("reset");
+          $('#individualReservationTime').html('<option value="" selected disabled>Waktu Kunjungan / Time</option>');
+          $('#individualReservationForm button[type=submit]').show();
+          $('#loading').hide();
+        },
+        error: function(error) {
+          toastAlert("error", "Terjadi kesalahan pada server");
+          $('#individualReservationForm button[type=submit]').show();
+          $('#loading').hide();
+        }
+      });
+    });
+
+    $(document).on("submit", "#groupReservationForm", function () {
+      $('#groupReservationForm button[type=submit]').hide();
+      $('#loading').show();
+      $.ajax({
+        url: "{{ url('/reservasi/add') }}",
+        method: 'POST',
+        data: new FormData(this),
+        processData: false,
+        contentType: false,
+        dataType: "json",
+        success: function(response) {
+          toastAlert("success", response.message);
+          $('#groupReservationForm').trigger("reset");
+          $('#groupReservationTime').html('<option value="" selected disabled>Waktu Kunjungan / Time</option>');
+          $('#groupReservationForm button[type=submit]').show();
+          $('#loading').hide();
+        },
+        error: function(error) {
+          toastAlert("error", "Terjadi kesalahan pada server");
+          $('#groupReservationForm button[type=submit]').show();
+          $('#loading').hide();
+        }
+      });
+    });
+    </script>
   </body>
 </html>

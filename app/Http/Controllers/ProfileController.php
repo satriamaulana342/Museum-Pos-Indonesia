@@ -10,6 +10,9 @@ class ProfileController extends Controller
 {
     public function profil(){
         $profil = Profile::where('id',1)->first();
+        if (!$profil) {
+            $profil = new Profile(); // Create an empty profile object
+}
 
         return view('pages.admin.profil',[
             'title' => 'Profile | Meseum POS',

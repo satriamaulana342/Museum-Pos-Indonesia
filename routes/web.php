@@ -11,7 +11,7 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HistoriesController;
-
+use App\Http\Controllers\ReservationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,14 +40,23 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/reservasi', function () {
-    return view('reservasi');
+Route::get('/reservasiPDF', function () {
+    return view('pdf/reservation-example');
+});
+
+Route::get('/reservasiEmail', function () {
+    return view('emails/reservation-example');
 });
 
 Route::get('/',[IndexController::class,'indexArtikel']);
 Route::get('/sejarah',[IndexController::class,'indexSejarah']);
 Route::get('/ruangan',[IndexController::class,'indexRuangan']);
 Route::get('/profil',[IndexController::class, 'indexProfile']);
+
+Route::get('/reservasi',[ReservationController::class,'index']);
+Route::get('/reservasi/cek-reservasi',[ReservationController::class,'checkReservation']);
+Route::get('cek-barcode/{id}',[ReservationController::class,'checkBarcode']);
+Route::post('/reservasi/add',[ReservationController::class,'store']);
 
 // Route::get('/artikel', function () {
 //     return view('artikel');
